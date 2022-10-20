@@ -1,0 +1,378 @@
+/****************************/
+/* HEADER SECTION */
+/****************************/
+
+.header {
+  background-color: #d0ebff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/****************************/
+/* NAVIGATION SECTION */
+/****************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #1c7ed6;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  background-color: #339af0;
+  color: #fff;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #1c7ed6;
+}
+
+.navbar .nav_right ul {
+  list-style: none;
+}
+
+.navbar .nav_right ul li.nr_li {
+  cursor: pointer;
+  color: #333;
+  background-color: #339af0;
+  border-radius: 50%;
+  font-size: 2rem;
+  position: relative;
+  padding: 1rem;
+}
+
+.navbar .nav_right ul li.nr_li:hover {
+  background-color: #1c7ed6;
+}
+
+.navbar .nav_right ul li i {
+  color: #1c7ed6;
+}
+
+.navbar .dd_menu {
+  position: absolute;
+  right: -25px;
+  top: 47px;
+  display: flex;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  display: none;
+}
+
+.navbar .dd_menu .dd_right {
+  padding: 15px 20px;
+}
+
+.navbar .dd_menu li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.navbar .dd_menu:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: 30px;
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+.navbar .dd_main.active .dd_menu {
+  display: flex;
+}
+
+/****************************/
+/* HERO SECTION */
+/****************************/
+
+.section-hero {
+  background-color: #d0ebff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-text-box {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 10px;
+  animation: slideInFromRight 1s ease-in;
+}
+
+/****************************/
+/* HOW IT WORKS SECTION */
+/****************************/
+
+.section-about {
+  padding: 9.6rem 0;
+  background-color: #f4fce3;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+/****************************/
+/* INFO SECTION */
+/****************************/
+
+.section-info {
+  padding: 9.6rem 0;
+  background-color: #d0ebff;
+}
+
+.info-heading {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #333;
+}
+
+.info-box {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  /* align-items: center; */
+}
+
+.info-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+  text-align: left;
+}
+
+.info-img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+/****************************/
+/* FOOTER SECTION */
+/****************************/
+
+footer {
+  padding: 6.4rem 3.2rem;
+  padding-bottom: 1.6rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.contact-info {
+  margin-bottom: 3.2rem;
+}
+
+.contact-info p span {
+  font-weight: 600;
+}
+
+.contact-pay-img {
+  margin-bottom: 3.2rem;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+}
+
+.contact-links a:link,
+.contact-links a:visited {
+  text-decoration: none;
+  background-color: #5f7185;
+  color: #fff;
+  font-size: 1.8rem;
+  padding: 1.6rem;
+}
+
+.contact-links a:hover,
+.contact-links a:active {
+  background-color: #92aecf;
+}
+
+.extra-links span {
+  padding: 10px 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.extra-links {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/****************************/
+/* CHILDCARE PAGE */
+/****************************/
+
+.section-childcare-hero {
+  background-color: #d0ebff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.childcare-hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.childcare-hero-text-box {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.childcare-heading-primary {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #333;
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.childcare-hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.childcare-hero-img {
+  width: 100%;
+  border-radius: 10px;
+  animation: slideInFromRight 1s ease-in;
+}
+
+.section-childcare-info {
+  padding: 9.6rem 0;
+  /* background-color: #d0ebff; */
+}
+
+.childcare-info-box {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.childcare-info-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: left;
+  font-weight: 500;
+}
+
+.list {
+  padding-left: 1.6rem;
+  margin-top: 1.6rem;
+  list-style: disc;
+}
+
+.list li {
+  font-size: 1.8rem;
+  padding-left: 1.6rem;
+}
+
+/****************************/
+/* ANIMATIONS */
+/****************************/
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
